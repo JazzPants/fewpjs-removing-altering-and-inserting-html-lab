@@ -31,6 +31,9 @@
 let x = document.getElementById("main");
 x.remove();
 //can be named anything, x, main, main2 etc.
+//alt solution:
+// document.querySelector("main#main").remove();
+
 
 let newHeader = document.createElement("h1")
 newHeader.setAttribute("id", "victory")
@@ -38,3 +41,8 @@ newHeader.setAttribute("id", "victory")
 newHeader.innerHTML = "Aladdin is the champion"
 document.body.appendChild(newHeader)
 
+//alternative solution
+// const newHeader = document.createElement("h1");
+// newHeader.id = "victory"
+// newHeader.innerHTML = "Flatiron School is the champion!";
+// newHeader.className = "victory";
